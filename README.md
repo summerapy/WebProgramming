@@ -1,6 +1,6 @@
 # WebProgramming
 
-* practice code
+* practice code
 
 ## Getting Started
 
