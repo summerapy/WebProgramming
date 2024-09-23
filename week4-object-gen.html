@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 생성</title>
+    <script>
+        function getStudentCount() {return this.nStudent;}
+        function register() {this.nStudent++;}
+        function unregister() {this.nStudent--;}
+
+        let object = new Object();
+        object.korName = "웹프로그래밍";
+        object.kor2Name = "클라우드컴퓨팅";
+        object.kor3Name = "프로그래밍언어론";
+        object.engName = "Web Programming";
+        object.classCode = "V024003";
+        object.nStudent = 0;
+        object.getStudentCount = getStudentCount;
+        object.register = register;
+        object.unregister = unregister;
+    </script>
+</head>
+<body>
+    <h3>1. 직접 객체 만들기</h3>
+    <script>
+        document.write("교과목 이름 = ");
+        document.write(object.korName+ "<br>");
+
+        document.write("등록 학생 수 = ");
+        document.write(object.nStudent + "<br>");
+
+        object.register();
+        document.write("after register, 등록 학생 수 = ");
+        document.write(object.getStudentCount() + "<br>");
+    </script>
+    <hr>
+
+    <h3>2. 리터럴 표기법</h3>
+    <script>
+        object.unregister();
+        document.write("교과목 이름 = ");
+        document.write(object.kor2Name+ "<br>");
+
+        document.write("등록 학생 수 = ");
+        document.write(object.nStudent + "<br>");
+
+        object.register();
+        document.write("after register, 등록 학생 수 = ");
+        document.write(object.getStudentCount() + "<br>");
+    </script>
+    <hr>
+
+    <h3>3. Prototype</h3>
+    <script>
+        object.unregister();
+        document.write("교과목 이름 = ");
+        document.write(object.kor3Name+ "<br>");
+
+        document.write("등록 학생 수 = ");
+        document.write(object.nStudent + "<br>");
+
+        object.register();
+        document.write("after register, 등록 학생 수 = ");
+        document.write(object.getStudentCount() + "<br>");
+    </script>
+    
+</body>
+</html>
