@@ -6,26 +6,26 @@
     <title>DOM 객체 동적 삽입 및 제거</title>
     <script>
         function addAnswer(obj, text) {
-            // 답변이 추가될 부모 요소(div)
+            
             const parentDiv = obj.parentElement;
-            // 이미 추가된 답변이 있는지 확인
+         
             const existingAnswer = parentDiv.querySelector('.answer');
 
             if (existingAnswer) {
-                // 이미 답변이 있으면 클릭 시 삭제
+          
                 parentDiv.removeChild(existingAnswer);
             } else {
-                // 새로운 <p> 요소 생성
+             
                 const answer = document.createElement('p');
                 answer.textContent = text;
                 answer.classList.add('answer');
 
-                // 답변 클릭 시 제거 기능 추가
+               
                 answer.onclick = function() {
                     parentDiv.removeChild(answer);
                 };
 
-                // 부모 div에 답변 추가
+             
                 parentDiv.appendChild(answer);
             }
         }
