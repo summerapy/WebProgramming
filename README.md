@@ -17,6 +17,12 @@
 - Week 4
   - 4주차 연습
   - object 생성 연습
+  - object-gen.html 객체 생성 3가지 방법 연습
+- Week 5
+  - 5주차 연습
+  - object-gen.html 객체 생성 3가지 방법 연습 리뷰
+  - prac8-4, prac8-6, prac8-9 연습문제
+  - 8-10 과제 (assignment1)
 
 ## Built With
 
