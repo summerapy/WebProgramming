@@ -26,7 +26,8 @@
 - Week 6
   - 6주차 연습
   - event review
-  - prac9-2, prac9-3 이벤트 생성 연습
+  - prac9-2 (라디오버튼 선택된 것 알아내서 그림 그리기)
+  - prac9-3 (Enter 키가 입력되었을 때 수식의 값을 계산하기)
   - 9-6, 9-10 과제 (assignment2)
 
 ## Built With
