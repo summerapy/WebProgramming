@@ -23,6 +23,11 @@
   - object-gen.html 객체 생성 3가지 방법 연습 리뷰
   - prac8-4, prac8-6, prac8-9 연습문제
   - 8-10 과제 (assignment1)
+- Week 6
+  - 6주차 연습
+  - event review
+  - prac9-2, prac9-3 이벤트 생성 연습
+  - 9-6, 9-10 과제 (assignment2)
 
 ## Built With
 
