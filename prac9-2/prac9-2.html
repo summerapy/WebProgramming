@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>라디오 버튼과 이미지 출력</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        img {
+            display: block;
+            margin-top: 10px;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h2>라디오 버튼을 클릭하면 이미지를 출력합니다.</h2>
+    <hr>
+    <div class="container">
+        <input type="radio" name="fruit" value="banana" onclick="showImage('banana')"> 바나나
+        <input type="radio" name="fruit" value="mango" onclick="showImage('mango')"> 망고
+        <input type="radio" name="fruit" value="apple" onclick="showImage('apple')" checked> 사과
+        <img id="fruitImage" src="apple.jpg" alt="과일 이미지">
+    </div>
+
+    <script>
+        function showImage(fruit) {
+            const image = document.getElementById('fruitImage');
+            image.src = fruit + '.jpg';
+            image.alt = fruit + ' 이미지';
+        }
+    </script>
+</body>
+</html>
