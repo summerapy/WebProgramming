@@ -1,38 +1,35 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>라디오 버튼과 이미지 출력</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            margin-top: 20px;
-        }
-        img {
-            display: block;
-            margin-top: 10px;
-            max-width: 200px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습문제 9-2</title>
+  <script>
+    function showImage(o) {
+      let newimg = document.getElementById('newimg');
+      if (newimg != null) {
+        newimg.parentElement.removeChild(newimg);
+      }
+
+      let img = new Image();
+      img.src = o.value;
+      let parent = document.getElementById('parent');
+      parent.appendChild(img);
+      img.setAttribute('id', 'newimg');
+      img.width = 100;
+      img.height = 100;
+    }
+  </script>
 </head>
 <body>
-    <h2>라디오 버튼을 클릭하면 이미지를 출력합니다.</h2>
-    <hr>
-    <div class="container">
-        <input type="radio" name="fruit" value="banana" onclick="showImage('banana')"> 바나나
-        <input type="radio" name="fruit" value="mango" onclick="showImage('mango')"> 망고
-        <input type="radio" name="fruit" value="apple" onclick="showImage('apple')" checked> 사과
-        <img id="fruitImage" src="apple.jpg" alt="과일 이미지">
-    </div>
+  <h2>라디오버튼을 클릭하면 이미지를 출력합니다.</h2>
+  <hr>
+  <form action="" id="parent">
+    <input type="radio" name="friut" value="banana.jpg" onclick="showImage(this);"> 바나나
+    <input type="radio" name="friut" value="mango.jpg" onclick="showImage(this);"> 망고
+    <input type="radio" name="friut" value="apple.jpg" onclick="showImage(this);"> 사과
+    <br><br>
 
-    <script>
-        function showImage(fruit) {
-            const image = document.getElementById('fruitImage');
-            image.src = fruit + '.jpg';
-            image.alt = fruit + ' 이미지';
-        }
-    </script>
+  </form>
 </body>
 </html>
