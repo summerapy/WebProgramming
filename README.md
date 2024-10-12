@@ -14,6 +14,7 @@
 - Week 3
   - 3주차 연습
   - CSS3 style 공부
+  - flex와 grid 
 - Week 4
   - 4주차 연습
   - object 생성 연습
