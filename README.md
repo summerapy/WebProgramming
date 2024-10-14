@@ -34,7 +34,11 @@
   - 7주차 연습
   - BOM review
   - Canvas Graphic review
-  - 10-5, 10-6 연습
+  - prac10-5, prac10-6 연습
+- Week 8
+  - 중간고사
+- Week 9
+  - 9주차 연습
 
 ## Built With
 
