@@ -30,6 +30,11 @@
   - prac9-2 (라디오버튼 선택된 것 알아내서 그림 그리기)
   - prac9-3 (Enter 키가 입력되었을 때 수식의 값을 계산하기)
   - 9-6, 9-10 과제 (assignment2)
+- Week 7
+  - 7주차 연습
+  - BOM review
+  - Canvas Graphic review
+  - 10-5, 10-6 연습
 
 ## Built With
 
