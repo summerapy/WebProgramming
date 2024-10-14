@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>시계 만들기</title>
+</head>
+
+<body>
+    <h3>div 태그에 시계 만들기</h3>
+    <hr>
+    <div id="clock"></div>
+    <input type="text" id="timeText" readonly>
+
+    <script>
+        function updateClock() {
+            let now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+            let meridiem = "오전";
+
+
+            if (hours >= 12) {
+                meridiem = "오후";
+            }
+            if (hours > 12) {
+                hours -= 12;
+            }
+
+
+            hours = String(hours).padStart(2, '0');
+            minutes = String(minutes).padStart(2, '0');
+            seconds = String(seconds).padStart(2, '0');
+
+            let currentTime = meridiem + " " + hours + ":" + minutes + ":" + seconds;
+            document.getElementById("timeText").value = currentTime;
+
+
+            setTimeout(updateClock, 1000);
+        }
+
+
+        updateClock();
+    </script>
+</body>
+
+</html>
