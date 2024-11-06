@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>곱셈 워커 태스크</title>
+</head>
+
+<body>
+  <h3>곱셈하기</h3>
+  <hr>
+  <input id="num1" type="text" size="20"> x
+  <input id="num2" type="text" size="20"> =
+  <button type="button" id="multiply" onclick="send()">곱하기</button>
+  <input id="result" type="text" size="20" readonly>
+
+  <script>
+    let multiplyWorker = new Worker("multiply.js"); 
+
+    function send() { 
+      let parameters = { 
+        num1: document.getElementById("num1").value,
+        num2: document.getElementById("num2").value
+      };
+     
+      multiplyWorker.postMessage(parameters);
+    }
+
+    
+    multiplyWorker.onmessage = function (e) {
+    
+      document.getElementById("result").value = e.data;
+    }
+  </script>
+</body>
+
+</html>
