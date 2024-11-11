@@ -46,7 +46,7 @@
   - prac13-6 연습
 - Week 11
   - Node.js 소개
-  - 고급 JavaScript (data type, ES6, hosting)
+  - 고급 JavaScript (data type, ES6, hoisting)
   - JavaScript Debugger, 고급 구문 작성 
 
 ## Built With
