@@ -44,6 +44,10 @@
   - 10주차 연습
   - 오디오 비디오 제어, 위치 정보 서비스, 웹 워커
   - prac13-6 연습
+- Week 11
+  - Node.js 소개
+  - 고급 JavaScript (data type, ES6, hosting)
+  - JavaScript Debugger, 고급 구문 작성 
 
 ## Built With
 
