@@ -47,7 +47,11 @@
 - Week 11
   - Node.js 소개
   - 고급 JavaScript (data type, ES6, hoisting)
-  - JavaScript Debugger, 고급 구문 작성 
+  - JavaScript Debugger, 고급 구문 작성
+- Week 12
+  - 12주차 연습
+  - 고급 JavaScript2 (Scope,Closure, JS function, functional programming)
+  - 함수형 프로그래밍 연습
 
 ## Built With
 
