@@ -51,7 +51,7 @@
 - Week 12
   - 12주차 연습
   - 고급 JavaScript2 (Scope,Closure, JS function, functional programming)
-  - 함수형 프로그래밍 연습
+  - 함수형 프로그래밍 연습 (funcPr-practice.js, funcPr-practice2.js)
 
 ## Built With
 
