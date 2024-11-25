@@ -52,6 +52,10 @@
   - 12주차 연습
   - 고급 JavaScript2 (Scope,Closure, JS function, functional programming)
   - 함수형 프로그래밍 연습 (funcPr-practice.js)
+- Week 13
+  - 13주차 연습
+  - Node.js 소개, 기본 기능
+  - Module 활용 및 web server 만들기
 
 ## Built With
 
