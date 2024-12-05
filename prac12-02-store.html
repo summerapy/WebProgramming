@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>세션 스토리지에 구입 리스트 저장</title>
+</head>
+<body>
+  <h3>세션 스토리지에 구입 리스트 저장</h3>
+  <label for="item">품목명:</label>
+  <input id="item" type="text">
+  <label for="quantity">개수:</label>
+  <input id="quantity" type="number">
+  <br>
+  <button onclick="saveItem()">저장</button>
+
+  <script>
+    function saveItem() {
+      const itemName = document.getElementById("item").value;
+      const quantity = document.getElementById("quantity").value;
+      
+      if (itemName && quantity) {
+        sessionStorage.setItem(itemName, quantity);
+        console.log("Saved item:", itemName, "Quantity:", quantity);
+        alert("품목이 저장되었습니다.");
+      } else {
+        alert("품목명과 개수를 입력하세요.");
+      }
+    }
+  </script>  
+</body>
+</html>

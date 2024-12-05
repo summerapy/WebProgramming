@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>세션 스토리지에서 구입 리스트 검색</title>
+</head>
+<body>
+  <h3>세션 스토리지에 구입 리스트 검색</h3>
+  <label for="searchItem">품목명:</label>
+  <input id="searchItem" type="text">
+  <label for="resultQuantity">개수:</label>
+  <input id="resultQuantity" type="text">
+  <br>
+  <button onclick="searchItem()">검색</button>
+
+  <script>
+    function searchItem() {
+      const searchItemName = document.getElementById("searchItem").value;
+      const quantity = sessionStorage.getItem(searchItemName);
+      
+      if (quantity) {
+        document.getElementById("resultQuantity").value = quantity;
+      } else {
+        alert("해당 품목이 저장되어 있지 않습니다.");
+        document.getElementById("resultQuantity").value = "";
+      }
+    }
+  </script>
+</body>
+</html>
